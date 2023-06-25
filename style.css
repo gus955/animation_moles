@@ -1,0 +1,130 @@
+:root{
+    font-size: 62.5%;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.garden{
+    height: auto;
+    display: grid;
+    position: relative;
+}
+
+.garden img{
+    width: 100%;
+}
+
+.mole{
+    background-image: url(./assets/toupeira6.svg);
+    height: 17rem;
+    width: 22rem;
+}
+
+.moles{
+    display: grid;
+    position: absolute;
+    grid-template-areas: "A B C D"
+    "E F G H"
+    "I J K L";
+
+    top: 30rem;
+    left: 40rem;
+    gap: 7rem;
+    align-items: center;
+
+    }
+    
+    .moles div:nth-child(1){
+        grid-area: A;
+    }
+
+    .moles div:nth-child(2){
+        grid-area: B;
+        animation: moleUp 0.7s 6s;
+        animation-iteration-count: infinite;
+    }
+
+    .moles div:nth-child(3){
+        grid-area: C;
+    }
+
+    .moles div:nth-child(4){
+        grid-area: D;
+    }
+
+    .moles div:nth-child(5){
+        grid-area: E;
+        animation: moleUp 0.7s 1s;
+        animation-iteration-count: infinite;
+
+    }
+
+    .moles div:nth-child(6){
+        grid-area: F;
+    }
+
+    .moles div:nth-child(7){
+        grid-area: G;
+        animation: moleUp 0.7s 2s;
+        animation-iteration-count: infinite;
+    }
+
+    .moles div:nth-child(8){
+        grid-area: H;
+        animation: moleUp 0.7s 4s;
+        animation-iteration-count: infinite;
+    }
+
+    .moles div:nth-child(9){
+        grid-area: I;
+        animation: moleUp 0.7s 5s;
+        animation-iteration-count: infinite;
+    }
+
+    .moles div:nth-child(10){
+        grid-area: J;
+    }
+
+    .moles div:nth-child(11){
+        grid-area: K;
+    }
+
+    .moles div:nth-child(12){
+        grid-area: L;
+    }
+
+   /* .mole{
+        animation: moleUp 0.7s;
+*/
+        
+
+
+
+
+    @keyframes moleUp {
+        0% {
+        background-image: url(./assets/toupeira1.svg);
+        transform: translateY(0px);
+    }
+        20% {
+        background-image: url(./assets/toupeira2.svg);
+    }
+        40% { 
+        background-image: url(./assets/toupeira3.svg);
+    }
+        60% {
+        background-image: url(./assets/toupeira4.svg);
+    }
+        80% {
+        background-image: url(./assets/toupeira5.svg);
+    }
+        100% {
+        background-image: url(./assets/toupeira6.svg);
+    }
+  }
+
